@@ -1,0 +1,305 @@
+/*
+body {
+	background: #ffffff url("img/white.png") no-repeat top fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
+}*/
+body, html {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.welcome-view {
+	height: 800px
+}
+
+.background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.side {
+	display: inline-block;
+}
+
+.dp {
+	position: absolute;
+	top: 80px;
+	left: 200px;
+}
+
+.greeting-text {
+	position: absolute;
+	left: 650px;
+	top: 100px;
+	color: white;
+	font-size: 80px;
+}
+
+.greeting-text-2 {
+	position: absolute;
+	display: inline;
+	left: 780px;
+	top: 230px;
+	color: white;
+	font-size: 100px;
+	text-shadow: 2px 1.5px #D9D4D6;
+}
+
+.greeting-text-3 {
+	position: absolute;
+	display: inline;
+	left: 780px;
+	top: 360px;
+	color: white;
+	font-size: 100px;
+	text-shadow: 2px 1.5px #D9D4D6;
+}
+
+.greeting-text-4 {
+	position: absolute;
+	left: 900px;
+	top: 560px;
+	color: white;
+	font-size: 80px;
+}
+
+/*home page view 2*/
+.content-area {
+	position: relative;
+	top: 25px;
+	height: 750px;
+}
+
+.background-2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.title {
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	text-shadow: 2px 1.5px #9FA7BD;
+}
+
+.about-box {
+	display: inline-block; /*the two boxes (for "Biography" and "Work Philosophy") were initially inline with eachother and started staggering at some point after I coded other things, couldn't figure out how to fix it*/ 
+	position: relative;
+	height: 300px;
+	width: 600px;
+	background-color: #3479C9;
+	opacity: 0.6;
+	top: 30px;
+	left: 90px;
+	margin: 25px;
+}
+
+.about-box:hover {
+	background-color: #083A75;
+	opacity: 0.9;
+	-webkit-transition: 0.5s;
+}
+
+.box-title {
+	position: relative;
+	text-align: center;
+	top: 30px;
+	color: white;
+	font-size: 50px;
+}
+
+.box-text {
+	position: relative;
+	text-align: center;
+	top: 40px;
+	margin: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+.lower-nav-title {
+	position: relative;
+	top: 35px;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	text-shadow: 2px 1.5px #9FA7BD;
+}
+
+.learn-option {
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 300px;
+	background-color: #3479C9;
+	opacity: 0.6;
+	top: 40px;
+	left: 115px;
+	margin: 6px;
+}
+
+.option-text {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	font-size: 25px;
+}
+
+.learn-option:hover {
+	opacity:0.8;
+	-webkit-transition: 0.3s;
+}
+
+.option-text:hover {
+	color: #031B57;
+	-webkit-transition: 0.3s;
+	cursor: pointer;
+}
+
+
+/*resume-page*/
+/*.side and .background formatting same as css from index*/
+
+.resume-title {
+	position: relative;
+	top: 30px;
+	left: 420px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	text-shadow: 2px 1.5px #9FA7BD;
+	margin-right: 350px;
+}
+
+.resume-subtitle {
+	position: relative;
+	top: 30px;
+	left: 420px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 1.5px #9FA7BD;
+	margin-right: 350px;
+}
+
+.resume-english {
+	position: absolute;
+	top: 120px;
+	left: 300px;
+	margin-right: 50px;
+}
+
+.resume-japanese {
+	position: absolute;
+	top: 120px;
+	left: 800px;
+}
+/*side-bar formatting*/
+.sidebar-container {
+	position: fixed;
+	width: 280px;
+	height: 100%;
+	background-color: #D9D4D6;
+	-webkit-transform:translateX(-280px);
+	-webkit-transition: all 0.3s;
+}
+
+.sidebar-item {
+	font-weight: 700;
+	font-size: 18px;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: pink;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+.sidebar-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+/* jQuery Manipulation Classes */
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(280px);
+	-moz-transform: translateX(280px);
+	transform: translateX(280px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey;
+	cursor: pointer;
+}
